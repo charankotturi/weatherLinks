@@ -4,10 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LocationActivity"
-    android:background="#87E7E7E7"
-
-    >
+    tools:context=".LocationActivity2">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"

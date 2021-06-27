@@ -4,15 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NameActivity"
-    android:background="#87E7E7E7"
-    >
+    tools:context=".MainActivity2">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            android:id="@+id/cardBack"
+            >
+
+            <ImageView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_back"
+                />
+
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="50dp"
@@ -48,10 +64,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etName"
+            android:id="@+id/etCityName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="ex : Hyndavi" />
+            android:hint="ex : Hyderabad" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -61,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginBottom="24dp"
-        android:text="Enter your name"
+        android:text="Enter your city name"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintStart_toStartOf="parent" />
